@@ -1,12 +1,28 @@
+@import "../shared/index";
+
 .new-models {
     min-height: 1920px;
     min-height: 800px;
+}
+
+.new-models-view {
+    padding: 20px 0;
+    position: relative;
 }
 
 .new-models-name {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.new-models-view__photo {
+    max-width: 205px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+    }
 }
 
 
@@ -27,8 +43,7 @@
 }
 
 .new-models-description {
-    width: 112px;
-    height: 29px;
+    max-width: 120px;
     margin: 0 auto;
 }
 
@@ -58,10 +73,11 @@
 }
 
 .newmodels-click {
-    width: 220px;
-    height: 55px;
     margin: 0 auto;
     padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
     
 .newmodels-click__button {
@@ -74,6 +90,7 @@
     color: hsl(0, 0%, 100%);
     border: none;
     background: hsl(25, 44%, 72%);
-    padding: 20px 30px 9px;
+    padding: 18px 30px;
+    margin-bottom: 3rem;
+    @extend %raised-arrow;
 }
-

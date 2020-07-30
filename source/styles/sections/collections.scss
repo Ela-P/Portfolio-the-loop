@@ -1,4 +1,4 @@
-
+@import "../shared/index";
 
 .collections {
     width: 100%;
@@ -10,18 +10,6 @@
 .collection-name {
     margin: 0 ;
 }
-
-
-.collections-man {   
-    width: 960px;
-    margin: 0 -15px;
-}
-
-.collections-women {
-    margin: 0 -15px;
-    width: 960px;
-}
-
 
 .collection-name__title {
     font-family: Montserrat;
@@ -64,6 +52,7 @@ span {
     height: 30px;
     border: none;
     background: hsl(25, 44%, 72%);
+    @extend %raised-arrow;
 }
 
 .cl {

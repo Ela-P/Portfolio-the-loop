@@ -1,7 +1,14 @@
 
+.tshirt {
+    background: hsl(38, 40%, 96%);
+    &:nth-child(even) {
+        background: hsl(0, 0%, 96%);
+    }
+}
+
 .tshirts-color {
     position: relative;
-   
+    margin: 0 -15px;
 }
 
 .tshirts-color-item__name {
