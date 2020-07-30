@@ -1,0 +1,40 @@
+%raised-arrow {
+  .btn-icon {
+    transform-origin: left;
+    transition: 0.4s;
+  }
+  &:hover {
+    .btn-icon {
+      transform: scaleX(2);
+    }
+  }
+}
+
+@mixin angled-border-part($y, $x, $color) {
+  content: "";
+  display: block;
+  position: absolute;
+  #{$y}: 0;
+  #{$x}: 0;
+  background-color: $color;
+  transition: 1s;
+}
+
+@mixin angled-border($y, $x, $color: #d7b298) {
+  &::before {
+    @include angled-border-part($y, $x, $color);
+    width: 25px;
+    height: 3px;
+    .new-models-view:hover & {
+      width: 100%;
+    }
+  }
+  &::after {
+    @include angled-border-part($y, $x, $color);
+    width: 3px;
+    height: 25px;
+    .new-models-view:hover & {
+      height: 100%;
+    }
+  }
+}

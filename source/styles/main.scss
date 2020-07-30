@@ -11,3 +11,29 @@ html {
     padding: 0;
     margin: 0 -15px;
   }
+
+
+.angle-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &__top {
+        &-right {
+            @include angled-border('top', 'right');
+        }
+        &-left {
+            @include angled-border('top', 'left');
+        }
+    }
+    &__bottom {
+        &-right {
+            @include angled-border('bottom', 'right');
+        }
+        &-left {
+            @include angled-border('bottom', 'left');
+        }
+    }
+}
