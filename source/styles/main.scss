@@ -1,6 +1,13 @@
 //write here your scss styles
-@import '../styles/shared/index.scss';
+@import './../styles/sections/index.scss';
+@import './sections/index.scss';
 
-body {
-   margin: 0;
+html {
+    font-size: default-rem;
 }
+
+
+.conainer--no-padding {
+    padding: 0;
+    margin: 0 -15px;
+  }

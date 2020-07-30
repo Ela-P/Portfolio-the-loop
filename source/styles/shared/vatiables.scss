@@ -1,0 +1,13 @@
+// colors
+$p-background: hsl(0, 0%, 90%);
+$primary-color:hsl(25, 44%, 72%);
+
+//size typography
+
+
+@function getRem($value) {
+    @return #{$value / $default-rem}rem;
+}
+$default-rem: 16px;
+$title-fontsize: getRem(36px);
+$paragraph-fontsize: getRem(16px);

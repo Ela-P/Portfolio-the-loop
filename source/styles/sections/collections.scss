@@ -1,34 +1,71 @@
 
+
+.collections {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, hsl(38, 40%, 96%) 50%, hsl(0, 0%, 96%) 50%)
+}
+
+
 .collection-name {
+    margin: 0 ;
+}
+
+
+.collections-man {   
+    width: 960px;
     margin: 0 -15px;
 }
 
-
-.collections-man {
-
-   
-width: 960px;
-height: 250px;
-background:  hsl(38, 40%, 96%);
-}
-
 .collections-women {
-
-
-
-width: 960px;
-height: 250px;
-background: hsl(0, 0%, 96%);
+    margin: 0 -15px;
+    width: 960px;
 }
 
 
 .collection-name__title {
     font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
 
-color: #000000;
+span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.collection-name__description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.collection-name__photo {
+    display: flex; ;
+    justify-content: flex-end;
+}
+
+
+.click__button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: hsl(25, 44%, 72%);
+}
+
+.cl {
+    color: hsl(0, 0%, 100%);
 }
